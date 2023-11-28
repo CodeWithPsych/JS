@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval & SetTimeOut</title>
+</head>
+
+<body>
+    <h1>SetInterval & SetTimeOut</h1>
+    <span id="time"></span>
+    <script>
+        // < -- set time out -->
+        // settimeout allows us to run the function once after the interval of time 
+        // cleartimeout allows us to run the function repeatedlly after the interval of time 
+
+        // function friends(name, text) {
+        //     console.log(name + text);
+        // };
+
+        // let timeOut = setTimeout(friends, 3000, "Naqeeb!", " Good morning");
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+        // < -- set interval -->
+        // interval = setInterval(friends, 10, "Arham ", "Good night");
+        // clearInterval(interval);
+
+        function displaytime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime, 1000);
+
+    </script>
+</body>
+
+</html>

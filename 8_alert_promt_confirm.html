@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert_promt_confirm</title>
+</head>
+
+<body>
+    <h1>alert</h1>
+    <h1>prompt</h1>
+    <h1 id="confirm">confirm</h1>
+
+    <script>
+        // alert _ it not return any thing
+        // alert("warning this site contain virus");
+
+        // prompt
+        // let name = prompt("What is your name", "your name");
+        // console.log(name);
+
+        // confirm 
+        // const delete_data = confirm("Do you really want to delete the data");
+        // if (delete_data) {
+        //     console.log("your data is deleted successfully");
+        // }
+        // else {
+        //     console.log("Your data is safe");
+        // }
+
+        const age = confirm("Are you 18+");
+        if(age){
+            console.log("Welcome to site");
+        }
+        else{
+            console.log("Sorry, you are not eligible for the site");
+        }
+
+    </script>
+    
+</body>
+
+</html>

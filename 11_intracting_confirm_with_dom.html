@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intracting_confirm_with_dom</title>
+</head>
+
+<body>
+    <h1 id="confirm">confirm</h1>
+
+    <script>
+        let data = document.getElementById("confirm");
+        let info = confirm("Are you 18+ ?");
+        if(info){
+            data.innerHTML="Welcome";
+        }
+        else{
+            data.innerHTML="site is only for 18+";
+        }
+    </script>
+</body>
+
+</html>

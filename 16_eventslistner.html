@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      div {
+        display: flex;
+        box-sizing: border-box;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50%;
+        border: 2px solid white;
+        border-radius: 12px;
+        background-color: rgb(31, 1, 1);
+        color: red;
+      }
+      section{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+        perferendis error laborum sed harum maxime porro! Itaque reiciendis
+        dolorem iure nulla maxime nostrum, ratione perferendis porro. Dicta
+        provident ut ad tempore alias ipsum, facilis autem optio odio obcaecati
+        ea veritatis dolorem quisquam placeat eum vero nihil maiores, illo at
+        unde nam quam odit modi ab? Culpa fugit id eos doloribus odit atque
+        possimus maxime dolorem illum distinctio ut architecto omnis est
+        repellat itaque dolorum ex magni autem nam, voluptas placeat voluptate?
+        Rerum quasi impedit vel quibusdam. Libero harum rerum, at molestiae quos
+        aliquam sequi ad asperiores cum temporibus tempora quo aliquid, suscipit
+        voluptas ratione sint. Praesentium, quae. Consectetur sint distinctio
+        molestias perspiciatis ut, cum ratione recusandae? Culpa nemo
+        accusantium vero.
+      </div>
+    </section>
+
+    <!-- js -->
+    <script>
+      let a = document.getElementById("para");
+      let b = a.innerHTML;
+      //   a.addEventListener('mouseenter', () => {
+      //     a.innerHTML = "HEy its change";
+      //   });
+      //   a.addEventListener('mouseleave',()=>{
+      //     a.innerHTML=b;
+      //   })
+      const arham = (e) => {
+        alert("mouse in para");
+      };
+
+      const urooj = (e) => {
+        alert("mouse outside the container ");
+      };
+
+      a.addEventListener("mouseenter", arham);
+      a.addEventListener("mouseleave", urooj);
+
+      // To remove the 'mouseleave' event listener:
+      // a.removeEventListener("mouseleave", restoreText);
+    </script>
+  </body>
+</html>

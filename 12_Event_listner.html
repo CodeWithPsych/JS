@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+
+<body>
+    <h1>Events Listner</h1>
+    <!-- There are a lot of events in js -->
+    <p id="para">Lorem ipsum dolor sit, amet c
+        onsectetur adipisicing elit. Praesentium sint,
+        omnis quisquam cupiditate maxime voluptates aliquid
+        ducimus, nesciunt libero explicabo dicta officiis quae eum harum
+        cumque consectetur, atque accusantium commodi aliquam. Distinctio
+        repudiandae recusandae ea molestias illum pariatur corporis exercitationem
+        facilis aut aspernatur? Illum aspernatur quae distinctio quos molestiae,
+        eos repellat. Optio unde error inventore dolor, culpa officiis veniam
+        excepturi veritatis ad, nobis a architecto perferendis repellendus
+        dolorum. Consequatur dolorum eveniet modi reiciendis consectetur c
+        orrupti ipsa, natus eligendi iure optio tempora, odio harum quis dolor
+        amet perferendis expedita exercitationem iusto? Voluptas animi magni
+        nam placeat fuga blanditiis numquam. Illum officiis in aperiam ut
+        laborum officia ad? Officiis, qui perspiciatis harum repellendus rerum,
+        deleniti, veniam dolorum sequi maiores cupiditate nam amet tempore
+        ratione dolore odit vitae eaque vel? Odit rem, at vero provident
+        pariatur sequi dicta delectus asperiores modi excepturi quam hic
+        laborum! Praesentium voluptas distinctio vitae odit consequatur
+        quod non totam quaerat alias, molestias aspernatur tempore officia.
+        Vero nesciunt velit, atque laudantium blanditiis, aperiam laborum
+        quia doloremque totam aliquam itaque, recusandae et corporis vel
+        distinctio dolores explicabo enim! Culpa asperiores esse expedita explicabo nesciunt excepturi eveniet
+        architecto accusamus soluta quo iste alias, officiis dolorum. Porro eius illo odio commodi consequuntur nesciunt
+        nemo, minus ipsam laborum quibusdam fugit sint dolore enim quod quam eos qui quis voluptates laudantium pariatur
+        excepturi, aliquam saepe. At aliquam natus non eaque ipsam, placeat eius aut pariatur nemo, tempora id maxime
+        consectetur totam magni quidem in quia expedita. Labore nesciunt atque quasi architecto deserunt beatae numquam
+        iste aut dolorem,vel in accusantium qui maiores, ipsa, fuga ea ab fugit nulla!
+        Aperiam totam quisquam architecto enim sint alias adipisci nostrum
+        placeat eius consequatur distinctio odit nemo magnam voluptatem nulla a
+        nobis quas commodi, nam cumque natus quam! Ipsa numquam quidem consequatur
+        quasi quo nulla magni. Veniam, aspernatur.</p>
+    <button id="btn">Show/Hide</button>
+
+    <!-- js  -->
+    <script>
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+        btn.addEventListener('click', function run() {
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        });
+
+        para.addEventListener('mouseover', function run() {
+            console.log("mouse in");
+        });
+        para.addEventListener('mouseout', function run() {
+            console.log("mouse out");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="new">
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ul>
+    </div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+
+    <script>
+        // for one element 
+        let main = document.getElementById("main");
+        console.log(main);
+
+        let li = document.querySelector('#new>li');
+        console.log(li);
+
+        let mains = document.querySelector("#main");
+        console.log(mains);
+
+        let sel = document.querySelector("#main");
+        console.log(sel);
+
+        // more then one element means elements
+        let containers = document.getElementsByClassName("container");
+        console.log(containers);
+
+    </script>
+</body>
+
+</html>

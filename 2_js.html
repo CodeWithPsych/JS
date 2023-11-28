@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+    <div>
+        hye
+    </div>
+    <script>
+        var str = "This is a Para";
+        console.log(str);
+        var position = str.indexOf('is');
+        console.log(position);
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // var substr = str.slice(1,7);
+        var substr = str.substring(1,7);
+        console.log(substr);
+
+        var substring = str.substr(1,2);
+        console.log(substring);
+
+        var replace = str.replace("para" , "arham");
+        console.log(str);
+        console.log(replace);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // remove strat and end spacess
+        var space = "    This is     pipi   ";
+        console.log(space);
+        console.log(space.trim());
+
+        // print character by index 
+        // var char = str.charAt(3);
+        // console.log(char);
+        console.log(str[2]);
+
+
+    </script>
+</body>
+
+</html>

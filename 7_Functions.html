@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Functions</h1>
+
+    <script>
+
+        let name = "Arham";
+        let name1 = "Saleem";
+        let name2 = "Ali";
+        let name3 = "Urooj";
+
+        let msg = "good night";
+        let text = "good night";
+        function again(name, msg) {
+            console.log(name + " is a good boy");
+            console.log(name + " " + msg)
+        }
+
+        function arham(msg, name) {
+            console.log(name + " is a good boy");
+            console.log(name + " " + msg)
+        }
+
+        // function arham(msg, name="Haji") {
+        //     console.log(name + " is a good boy");
+        //     console.log(name + " " + msg)
+        // }
+        // arham(msg);
+
+
+
+        again(name, msg);
+        again(name1, msg);
+        again(name2, msg);
+        again(name3, msg);
+
+        arham(msg, name);
+        arham(msg, name1);
+        arham(msg, name2);
+        arham(msg, name3);
+
+        arham(text, name);
+        arham(text, name1);
+        arham(text, name2);
+        arham(text, name3);
+
+        function sum(a, b, c) {
+            let d = a + b + c;
+            return d;
+        }
+
+        let values = sum(1, 2, 3);
+        console.log(values);
+
+        function sub(a, b) {
+            let c = a - b;
+            console.log(c);
+        }
+
+        let sub_values = sub(1, 2);
+        console.log(sub_values);
+
+        function div(a,b){
+            return a/b;
+        }
+
+        let div_values=(6,3);
+        console.log(div_values);
+
+    </script>
+</body>
+
+</html>
